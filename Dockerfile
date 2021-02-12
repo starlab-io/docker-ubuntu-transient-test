@@ -9,7 +9,7 @@ RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
         build-essential software-properties-common ca-certificates libssl-dev \
         libvirt-dev libvirt-daemon-system automake gcc pkg-config qemu unzip \
-        locales python3.6-dev python3-pip openssh-client git && \
+        locales python-minimal python3.6-dev python3-pip openssh-client git && \
     apt-get autoremove -y && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
