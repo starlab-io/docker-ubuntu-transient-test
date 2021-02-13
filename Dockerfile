@@ -14,6 +14,12 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
+RUN apt-get update && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -y python-minimal && \
+    apt-get autoremove -y && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
 RUN DEBIAN_FRONTEND=noninteractive usermod -aG kvm $(whoami) && \
     locale-gen en_US.utf8 && \
     dpkg-reconfigure locales && \
