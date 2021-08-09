@@ -17,6 +17,7 @@ RUN apt-get update && \
         libvirt-daemon-system \
         locales \
         openssh-client \
+        ovmf \
         pkg-config \
         python \
         python2.7 \
