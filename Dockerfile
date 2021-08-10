@@ -18,12 +18,14 @@ RUN apt-get update && \
         locales \
         openssh-client \
         ovmf \
+        pigz \
         pkg-config \
         python \
         python2.7 \
         python3-dev \
         python3-pip \
         python3-venv \
+        python3-yaml \
         qemu-kvm \
         qemu-system-x86 \
         qemu-utils \
