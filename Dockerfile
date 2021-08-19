@@ -10,6 +10,7 @@ RUN apt-get update && \
         automake \
         build-essential \
         ca-certificates \
+        file \
         gcc \
         git \
         libpython2.7-stdlib \
@@ -29,6 +30,7 @@ RUN apt-get update && \
         qemu-kvm \
         qemu-system-x86 \
         qemu-utils \
+        rsync \
         software-properties-common \
         unzip && \
     apt-get autoremove -y && \
