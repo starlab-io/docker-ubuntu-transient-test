@@ -7,6 +7,7 @@ ENV USER root
 # build depends. Please keep the package list sorted
 RUN apt-get update && \
     apt-get --quiet --yes install --no-install-recommends \
+        apt-transport-https \
         automake \
         build-essential \
         ca-certificates \
@@ -39,6 +40,7 @@ RUN apt-get update && \
 
 RUN locale-gen en_US.utf8 && \
     dpkg-reconfigure locales && \
+    update-ca-certificates && \
     python3 -m pip install --upgrade setuptools wheel && \
     usermod -aG kvm $(whoami)
 
