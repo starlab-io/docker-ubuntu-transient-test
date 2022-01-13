@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:21.10
 MAINTAINER Farhan Patwa <farhan.patwa@starlab.io>
 
 ENV DEBIAN_FRONTEND=noninteractive
