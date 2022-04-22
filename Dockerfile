@@ -32,7 +32,8 @@ RUN apt-get update && \
         qemu-utils \
         rsync \
         software-properties-common \
-        unzip && \
+        unzip \
+        rpm && \
     apt-get autoremove -y && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
